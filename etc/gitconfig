@@ -1,0 +1,65 @@
+[alias]
+	unstage = reset HEAD --
+  add-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`"
+  changes=diff --name-status -r
+  ci = commit
+  cn = commit --no-verify
+  co = checkout
+  co = checkout
+  diffstat=diff --stat -r
+  dl = "!git ll -1"
+  dlc = diff --cached HEAD^
+  edit-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; vim `f`"
+  fix = "!f() { git commit -a -m \"fixup! $(git log -1 --pretty=format:%s)\" && git rebase -i --autosquash HEAD~4; }; f"
+  gitkconflict = !gitk --left-right HEAD...MERGE_HEAD
+  graph = log --color --graph --pretty=format:\"%h | %ad | %an | %s%d\" --date=short
+  la = "!git config -l | grep alias | cut -c 7-"
+  last = log -1 HEAD
+  lasttag = describe --tags --abbrev=0
+  lc = log ORIG_HEAD.. --stat --no-merges
+  ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+  lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  llog = log --date=local
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  lt = describe --tags --abbrev=0
+  new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
+  ours = "!f() { git co --ours $@ && git add $@; }; f"
+  praise = blame
+  prune-all = !git remote | xargs -n 1 git remote prune-all
+  r = reset
+  r1 = reset HEAD^
+  r2 = reset HEAD^^
+  onel = log --oneline --decorate --color
+  restore = checkout --
+  review = log -p -b --color --pretty=format:\"%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)\" --relative-date --decorate
+  rh = reset --hard
+  rh1 = reset HEAD^ --hard
+  rh2 = reset HEAD^^ --hard
+  st = status
+  sync = "!f() { echo Syncing $1 with master && git checkout master && git pull && git checkout $1 && git rebase master; }; f"
+  theirs = "!f() { git co --theirs $@ && git add $@; }; f"
+  undo=reset --hard
+  unstage = reset HEAD --
+  visualise = !gitk
+  whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+  whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+[user]
+  name = "corey"
+	email = "csundahl@gmail.com"
+[core]
+	editor = gvim
+[color]
+	ui = true
+[push]
+	default = matching
+
+[color "diff"]
+	whitespace = red reverse
+[diff]
+	tool = gvim
+[difftool]
+	prompt = false
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
