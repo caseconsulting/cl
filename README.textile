@@ -18,7 +18,16 @@ h2. Warning
 
 I mod these all the time, and sometimes I break stuff.  Also, my main platforms are OS X and Linux (Debian based) in the console, not XWindows.  Most of my stuff works just fine in something like gnome-terminal, but I usually only check my main platforms when I make changes.
 
-h2. More information
+h2. Additional information
+
+h3.  Setup
+
+first, back up your existing dotfiles!
+<pre>
+cd ~/
+git clone git@github.com:coreyas/cl.git
+source ./cl/etc/link
+</pre>
 
 h3.  Gvim setup
   
