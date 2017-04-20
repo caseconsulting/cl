@@ -20,3 +20,11 @@ I mod these all the time, and sometimes I break stuff.  Also, my main platforms 
 
 h2. More information
 
+h3.  Gvim setup
+  
+start gvim
+install plugins type command:
+
+:PlugInstall
+
+for much more information on how to use vim-plug check out the readme in the "git repo":https://github.com/junegunn/vim-plug
