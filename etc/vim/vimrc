@@ -327,5 +327,7 @@ endif
 "colorscheme ir_dark
 "match LongLineWarning '\%120v.*'
 
+let g:Powerline_symbols = 'fancy'
+
 "autocmd User ~/git/some_folder/* call Tabstyle_spaces() | let g:force_xhtml=1 
 set backupskip=/tmp/*,/private/tmp/*
