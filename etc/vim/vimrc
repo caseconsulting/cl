@@ -303,6 +303,8 @@ Plug 'scrooloose/nerdcommenter'
 
 Plug 'ctrlpvim/ctrlp.vim'
 
+Plug 'itchyny/lightline.vim'
+
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
 
