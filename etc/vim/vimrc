@@ -301,7 +301,7 @@ Plug 'gregsexton/gitv', {'on': ['Gitv']}
 
 Plug 'scrooloose/nerdcommenter'
 
-" Plug 'ctrlpvim/ctrip.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
