@@ -295,7 +295,7 @@ Plug 'bling/vim-airline'
 
 Plug 'airblade/vim-gitgutter'
 
-Plug 'powerline/powerline'
+Plug 'powerline/powerline', {'tag': '2.5.2'}
 
 Plug 'gregsexton/gitv', {'on': ['Gitv']}
 
