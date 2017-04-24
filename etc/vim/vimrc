@@ -305,6 +305,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 
 Plug 'itchyny/lightline.vim'
 
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
 
