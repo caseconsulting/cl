@@ -308,13 +308,16 @@ Plug 'itchyny/lightline.vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
+Plug 'editorconfig/editorconfig-vim'
+
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
 
 " Initialize plugin system
 call plug#end()
 
-
+" Disable code folding in vim-markdown
+let g:vim_markdown_folding_disabled = 1
 " -----------------------------------------------------------------------------  
 " |                               Host specific                               |
 " -----------------------------------------------------------------------------  
