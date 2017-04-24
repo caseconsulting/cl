@@ -310,6 +310,8 @@ Plug 'plasticboy/vim-markdown'
 
 Plug 'editorconfig/editorconfig-vim'
 
+Plug 'nikvdp/ejs-syntax'
+
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
 
