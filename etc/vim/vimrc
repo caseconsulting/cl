@@ -312,6 +312,8 @@ Plug 'editorconfig/editorconfig-vim'
 
 Plug 'nikvdp/ejs-syntax'
 
+Plug 'vim-scripts/jade.vim'
+
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
 
