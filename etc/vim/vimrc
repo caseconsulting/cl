@@ -316,6 +316,8 @@ Plug 'vim-scripts/jade.vim'
 
 Plug 'vim-syntastic/syntastic'
 
+Plug 'skammer/vim-css-color'
+
 " Unmanaged plugin (manually installed and updated)
 "Plug '~/my-prototype-plugin'
 
